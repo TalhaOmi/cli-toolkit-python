@@ -1,7 +1,10 @@
-try: 
-    x = 10
-    y = 0
-    print(x / y)
+#temp converter C to F
 
-except ZeroDivisionError:
-    print("y has 0 cant' be that")
+try:
+    print("C to F converter: input Celsius")
+    c = float(input())
+    f = (c*1.8)+32
+    print("F is: ",f)
+except ValueError:
+    print("error in input")
+
