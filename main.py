@@ -1,4 +1,5 @@
 #temp converter 
+import converters
 
 while True:
     print("1: Celsius to Fahrenheit")
@@ -15,17 +16,15 @@ while True:
         try:
             print("C to F converter: input Celsius")
             a = float(input())
-            b = (a*1.8)+32
-            print("F is: ",b)
+            print("F is: ",converters.ctof(a))
         except ValueError:
             print("error in input")
 
     elif(x == 2):
         try:
             print("F to C converter: input Farhenheit")
-            c = float(input())
-            d = (c-32)/1.8
-            print("C is: ",d)
+            a = float(input())
+            print("C is: ",converters.ftoc(a))
         except ValueError:
             print("error in input")
 
